@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxz.mybatis.ConfigInfoDao">
+    <select id="queryConfigInfo" resultType="com.lxz.mybatis.schema.ConfigInfo">
+        select id as id,data_id as dataid,group_id as groupid,content as content,md5 as md5,gmt_create as gmtcreate from config_info where id = #{id}
+    </select>
+</mapper>
