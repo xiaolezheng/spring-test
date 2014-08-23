@@ -12,5 +12,6 @@ public final class Boot {
         BeanFactory ctx = new ClassPathXmlApplicationContext("classpath:spring.xml");
         FooService foo = (FooService) ctx.getBean("fooService");
         logger.debug(foo.getFoo("Pengo", 12));
+        logger.debug("ceshi: {}",12);
     }
 }
