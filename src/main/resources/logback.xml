@@ -6,7 +6,7 @@
         </encoder>
     </appender>
 
-    <logger name="org" level="debug" additivity="false">
+    <logger name="org" level="info" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
 
